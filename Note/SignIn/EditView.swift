@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct EditView: View {
-    
     @Environment(\.dismiss) var dismiss
-    @State var titleText = ""
+    @State var titleText: String
     var viewModel: NoteViewModel
     var note: Note
     
@@ -59,5 +58,5 @@ struct EditView: View {
     }
 }
 #Preview {
-    EditView(viewModel: NoteViewModel(), note: Note(id: "123", title: "Everthing is Good"))
+    EditView(titleText: "Hello World!", viewModel: NoteViewModel(), note: Note(id: "123", title: "Everthing is Good"))
 }
