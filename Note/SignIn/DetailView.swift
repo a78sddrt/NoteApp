@@ -39,7 +39,7 @@ struct DetailsView: View {
                                     .padding()
                             }
                             .sheet(isPresented: $showingEdit2){
-                                EditView(viewModel: viewModel, note: note).presentationDetents([.large, .medium])
+                                EditView(titleText: note.title ?? "", viewModel: viewModel, note: note).presentationDetents([.large, .medium])
                             }
                         }
                     }
