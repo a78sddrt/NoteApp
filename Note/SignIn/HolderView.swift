@@ -9,17 +9,23 @@ import SwiftUI
 
 struct HolderView: View {
     @EnvironmentObject private var authModel: AuthViewModel
+    @State private var isActive = false
     
     var body: some View {
-        Group {
-            if authModel.user == nil {
-                SignUpView()
-            } else {
-                ContentView()
+        if isActive == true{
+            Group {
+                if authModel.user == nil {
+                    SignUpView()
+                } else {
+                       HomeView()
+                }
+            }
+            .onAppear {
+                authModel.listenToAuthState()
             }
         }
-        .onAppear {
-            authModel.listenToAuthState()
+        else{
+            SplashScreenView(isActive: $isActive)
         }
     }
 }

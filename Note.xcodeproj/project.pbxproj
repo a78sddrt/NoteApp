@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		835604AA2C688F930014A635 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835604A92C688F930014A635 /* Post.swift */; };
+		835604AC2C688FE70014A635 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835604AB2C688FE70014A635 /* PostViewModel.swift */; };
+		835604AE2C6891490014A635 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835604AD2C6891490014A635 /* PostView.swift */; };
+		835604B12C689A500014A635 /* PostOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835604B02C689A500014A635 /* PostOnlineView.swift */; };
+		835604B52C689BAA0014A635 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835604B42C689BAA0014A635 /* HomeView.swift */; };
 		83B4BFAC2C65DF7A00AAFFC7 /* NoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFAB2C65DF7A00AAFFC7 /* NoteApp.swift */; };
 		83B4BFB02C65DF7C00AAFFC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B4BFAF2C65DF7C00AAFFC7 /* Assets.xcassets */; };
 		83B4BFB32C65DF7C00AAFFC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B4BFB22C65DF7C00AAFFC7 /* Preview Assets.xcassets */; };
@@ -23,11 +28,12 @@
 		83B4BFE82C65E03B00AAFFC7 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFE22C65E03B00AAFFC7 /* NoteViewModel.swift */; };
 		83B4BFE92C65E03B00AAFFC7 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFE32C65E03B00AAFFC7 /* FormView.swift */; };
 		83B4BFEA2C65E03B00AAFFC7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFE42C65E03B00AAFFC7 /* DetailView.swift */; };
-		83B4BFEB2C65E03B00AAFFC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFE52C65E03B00AAFFC7 /* ContentView.swift */; };
+		83B4BFEB2C65E03B00AAFFC7 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFE52C65E03B00AAFFC7 /* NoteListView.swift */; };
 		83B4BFED2C65E12100AAFFC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83B4BFEC2C65E12100AAFFC7 /* GoogleService-Info.plist */; };
 		83B4BFF02C65E17900AAFFC7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 83B4BFEF2C65E17900AAFFC7 /* FirebaseAuth */; };
 		83B4BFF22C65E17900AAFFC7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 83B4BFF12C65E17900AAFFC7 /* FirebaseFirestore */; };
 		83B4BFF42C65E17900AAFFC7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 83B4BFF32C65E17900AAFFC7 /* FirebaseStorage */; };
+		83B4BFF82C6646BB00AAFFC7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4BFF72C6646BB00AAFFC7 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		835604A92C688F930014A635 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		835604AB2C688FE70014A635 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		835604AD2C6891490014A635 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		835604B02C689A500014A635 /* PostOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostOnlineView.swift; sourceTree = "<group>"; };
+		835604B42C689BAA0014A635 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		83B4BFA82C65DF7A00AAFFC7 /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B4BFAB2C65DF7A00AAFFC7 /* NoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteApp.swift; sourceTree = "<group>"; };
 		83B4BFAF2C65DF7C00AAFFC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,9 +78,10 @@
 		83B4BFE22C65E03B00AAFFC7 /* NoteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		83B4BFE32C65E03B00AAFFC7 /* FormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		83B4BFE42C65E03B00AAFFC7 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		83B4BFE52C65E03B00AAFFC7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83B4BFE52C65E03B00AAFFC7 /* NoteListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
 		83B4BFEC2C65E12100AAFFC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83B4BFF62C65ED9D00AAFFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83B4BFF72C6646BB00AAFFC7 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		835604AF2C6893B50014A635 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				835604A92C688F930014A635 /* Post.swift */,
+				835604AB2C688FE70014A635 /* PostViewModel.swift */,
+				835604AD2C6891490014A635 /* PostView.swift */,
+				835604B02C689A500014A635 /* PostOnlineView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		83B4BF9F2C65DF7A00AAFFC7 = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +148,9 @@
 			children = (
 				83B4BFF62C65ED9D00AAFFC7 /* Info.plist */,
 				83B4BFAB2C65DF7A00AAFFC7 /* NoteApp.swift */,
-				83B4BFE52C65E03B00AAFFC7 /* ContentView.swift */,
+				835604B42C689BAA0014A635 /* HomeView.swift */,
 				83B4BFF52C65E2FB00AAFFC7 /* NoteView */,
+				835604AF2C6893B50014A635 /* Post */,
 				83B4BFDA2C65DFB400AAFFC7 /* SignIn */,
 				83B4BFAF2C65DF7C00AAFFC7 /* Assets.xcassets */,
 				83B4BFB12C65DF7C00AAFFC7 /* Preview Content */,
@@ -175,8 +199,10 @@
 		83B4BFF52C65E2FB00AAFFC7 /* NoteView */ = {
 			isa = PBXGroup;
 			children = (
+				83B4BFE52C65E03B00AAFFC7 /* NoteListView.swift */,
 				83B4BFE42C65E03B00AAFFC7 /* DetailView.swift */,
 				83B4BFE02C65E03B00AAFFC7 /* EditView.swift */,
+				83B4BFF72C6646BB00AAFFC7 /* SplashScreenView.swift */,
 				83B4BFE32C65E03B00AAFFC7 /* FormView.swift */,
 				83B4BFE12C65E03B00AAFFC7 /* Note.swift */,
 				83B4BFE22C65E03B00AAFFC7 /* NoteViewModel.swift */,
@@ -324,18 +350,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835604AC2C688FE70014A635 /* PostViewModel.swift in Sources */,
 				83B4BFDB2C65DFB400AAFFC7 /* AuthViewModel.swift in Sources */,
+				83B4BFF82C6646BB00AAFFC7 /* SplashScreenView.swift in Sources */,
 				83B4BFAC2C65DF7A00AAFFC7 /* NoteApp.swift in Sources */,
-				83B4BFEB2C65E03B00AAFFC7 /* ContentView.swift in Sources */,
+				83B4BFEB2C65E03B00AAFFC7 /* NoteListView.swift in Sources */,
 				83B4BFE92C65E03B00AAFFC7 /* FormView.swift in Sources */,
 				83B4BFE82C65E03B00AAFFC7 /* NoteViewModel.swift in Sources */,
 				83B4BFDE2C65DFB400AAFFC7 /* HolderView.swift in Sources */,
 				83B4BFEA2C65E03B00AAFFC7 /* DetailView.swift in Sources */,
+				835604B52C689BAA0014A635 /* HomeView.swift in Sources */,
 				83B4BFE72C65E03B00AAFFC7 /* Note.swift in Sources */,
+				835604AE2C6891490014A635 /* PostView.swift in Sources */,
 				83B4BFDD2C65DFB400AAFFC7 /* ForgotPasswordView.swift in Sources */,
+				835604B12C689A500014A635 /* PostOnlineView.swift in Sources */,
 				83B4BFE62C65E03B00AAFFC7 /* EditView.swift in Sources */,
 				83B4BFDF2C65DFB400AAFFC7 /* SignUpView.swift in Sources */,
 				83B4BFDC2C65DFB400AAFFC7 /* ButtonView.swift in Sources */,
+				835604AA2C688F930014A635 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

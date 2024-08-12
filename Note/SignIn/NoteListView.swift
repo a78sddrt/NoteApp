@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseAuth
 import FirebaseFirestore
 
-struct ContentView: View {
+struct NoteListView: View {
     @State private var showingSheet = false
     @State private var postDetent = PresentationDetent.medium
     @ObservedObject private var viewModel = NoteViewModel()
@@ -18,7 +18,6 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                
                 List{
                     ForEach(viewModel.notes, id:\.id){ Note in
                         NavigationLink(destination: DetailsView(note: Note)){
@@ -75,11 +74,8 @@ struct ContentView: View {
         }
         .tint(.mint)
         .scrollContentBackground(.hidden)
+        .refreshable {}
     }
     
 }
 
-
-#Preview {
-    ContentView()
-}
